@@ -34,4 +34,9 @@ public class AbusiveCodeExampleOne {
     public int getVal3() {
         return (int) 4F;
     }
+
+    public String getStr() {
+        String val = null;
+        return val.substring(4);
+    }
 }
