@@ -26,4 +26,12 @@ public class AbusiveCodeExampleOne {
     public int getVal() {
         return (int) 4F;
     }
+
+    public int getVal2() {
+        return (int) 4D;
+    }
+
+    public int getVal3() {
+        return (int) 4F;
+    }
 }
