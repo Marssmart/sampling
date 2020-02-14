@@ -22,4 +22,8 @@ public class AbusiveCodeExampleOne {
     public String getString() {
         return " dsa" + "ewqdsa " + "ewqdas ewq";
     }
+
+    public int getVal() {
+        return (int) 4F;
+    }
 }
