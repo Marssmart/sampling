@@ -18,4 +18,8 @@ public class AbusiveCodeExampleOne {
         final int read = in.read();
         return read;
     }
+
+    public String getString() {
+        return " dsa" + "ewqdsa " + "ewqdas ewq";
+    }
 }
