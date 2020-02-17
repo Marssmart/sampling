@@ -14,11 +14,11 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B clean install --file pom.xml -DskipTests
+      run: mvn -B clean install --file pom.xml
     - name: Code Climate Test Reporter
-      uses: paambaati/codeclimate-action@v2.4.0
+      uses:  paambaati/codeclimate-action@v2.2.4
       env:
         CC_TEST_REPORTER_ID: 0ca7aa5a3e5db185dfbdcbe920f19b48868ac605e29fc76d59a26ee802ac37b2
       with:
-        coverageCommand: mvn -B test package --file pom.xml
+        coverageCommand: after-build --prefix /target/site/jacoco --coverage-input-type jacoco
         debug: true
