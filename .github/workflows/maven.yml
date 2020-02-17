@@ -16,7 +16,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B clean install --file pom.xml -DskipTests
     - name: Code Climate Test Reporter
-      uses: aktions/codeclimate-test-reporter@v1
+      uses: paambaati/codeclimate-action@v2.2.4
+      env:
+        CC_TEST_REPORTER_ID: 0ca7aa5a3e5db185dfbdcbe920f19b48868ac605e29fc76d59a26ee802ac37b2
       with:
-        codeclimate-test-reporter-id: 0ca7aa5a3e5db185dfbdcbe920f19b48868ac605e29fc76d59a26ee802ac37b2
-        command: mvn -B test package --file pom.xml
+        coverageCommand: mvn -B test package --file pom.xml
