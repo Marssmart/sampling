@@ -19,4 +19,4 @@ jobs:
       uses: aktions/codeclimate-test-reporter@v1
       with:
         codeclimate-test-reporter-id: 0ca7aa5a3e5db185dfbdcbe920f19b48868ac605e29fc76d59a26ee802ac37b2
-        command: after-build -p target/site/jacoco -t jacoco -d
+        command: after-build target/site/jacoco -t jacoco -d
