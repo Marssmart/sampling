@@ -20,5 +20,5 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: 0ca7aa5a3e5db185dfbdcbe920f19b48868ac605e29fc76d59a26ee802ac37b2
       with:      
-        coverageCommand: ./cc-reporter after-build --prefix /target/site/jacoco --coverage-input-type jacoco
+        coverageCommand: after-build --prefix /target/site/jacoco/jacoco.xml --coverage-input-type jacoco
         debug: true
